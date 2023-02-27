@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center border-b bg-white py-4 sm:flex-row sm:px-10 lg:px-20 xl:px-32">
-    <a href="#" class="text-2xl font-bold text-gray-800">Order #123</a>
+    <a href="#" class="text-2xl font-bold text-gray-800">Create Order</a>
     <OrderProgress></OrderProgress>
   </div>
   <div class="grid sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-32">
