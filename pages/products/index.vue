@@ -30,7 +30,7 @@ export default {
     };
   },
   async created() {
-    const { data } = await axios.get("http://127.0.0.1:8888/api/v1/products");
+    const { data } = await axios.get(`${this.$config.APP_URL}/v1/products`);
 
     this.categories = data;
   },

@@ -48,7 +48,7 @@ export default {
   methods: {
     submit() {
       axios
-        .post("http://127.0.0.1:8888/api/v1/categories", this.category, {
+        .post(`${this.$config.APP_URL}/v1/categories`, this.category, {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
           },

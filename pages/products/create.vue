@@ -56,7 +56,7 @@ export default {
     };
   },
   async mounted() {
-    const { data } = await axios.get("http://127.0.0.1:8888/api/v1/categories");
+    const { data } = await axios.get(`${this.$config.APP_URL}/v1/categories`);
 
     this.categories = data;
   },
@@ -66,7 +66,7 @@ export default {
     },
     submit() {
       axios
-        .post("http://127.0.0.1:8888/api/v1/products", this.product, {
+        .post(`${this.$config.APP_URL}/v1/products`, this.product, {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
           },

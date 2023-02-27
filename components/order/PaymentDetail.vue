@@ -79,9 +79,6 @@ export default {
       required: true,
     },
   },
-  mounted() {
-    console.log(this.items);
-  },
   methods: {
     subTotal() {
       let amount = 0;
@@ -106,14 +103,12 @@ export default {
     },
     placeOrder() {
       axios
-        .post("http://127.0.0.1:8888/api/v1/orders", this.items, {
+        .post(`${this.$config.APP_URL}/v1/orders`, this.items, {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
           },
         })
         .then((response) => {
-          console.log(response);
-
           alert(`Order created successfully #${response.data.id}`);
         })
         .catch((error) => {

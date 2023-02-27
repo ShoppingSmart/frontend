@@ -77,12 +77,12 @@ export default {
     };
   },
   mounted() {
-    const categoryRequest = axios.get("http://127.0.0.1:8888/api/v1/categories", this.product);
+    const categoryRequest = axios.get(`${this.$config.APP_URL}/v1/categories`, this.product);
 
     categoryRequest.then((categoryResponse) => {
       this.settings.categories = categoryResponse.data;
 
-      const productRequest = axios.get("http://127.0.0.1:8888/api/v1/products", this.product);
+      const productRequest = axios.get(`${this.$config.APP_URL}/v1/products`, this.product);
       productRequest.then((productResponse) => {
         this.settings.products = productResponse.data.map((product) => {
           product.category = this.findCategoryById(product.category_id);
