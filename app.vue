@@ -4,7 +4,7 @@
       <LayoutHeader></LayoutHeader>
     </header>
 
-    <main class="flex-1 overflow-y-auto">
+    <main class="flex-1 overflow-y-auto py-4">
       <NuxtPage />
     </main>
 
