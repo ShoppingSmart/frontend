@@ -1,8 +1,8 @@
 <template>
   <nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
-      <a href="https://flowbite.com" class="flex items-center">
-        <img :src="logo" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+      <a href="https://www.softexpert.com" class="flex items-center">
+        <img :src="logo" class="h-6 mr-3 sm:h-9" alt="Soft Expert Logo" />
         <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Soft Expert Testing App</span>
       </a>
       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
