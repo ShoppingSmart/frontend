@@ -1,5 +1,13 @@
 <template>
-  <div>
-    <NuxtPage />
+  <div class="flex flex-col h-screen overflow-hidden">
+    <header class="w-full text-center border-b border-grey p-4">
+      <LayoutHeader></LayoutHeader>
+    </header>
+
+    <main class="flex-1">
+      <NuxtPage />
+    </main>
+
+    <LayoutFooter></LayoutFooter>
   </div>
 </template>
